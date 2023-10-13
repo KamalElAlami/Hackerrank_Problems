@@ -3,8 +3,8 @@
 void update(int *a,int *b) {
     int tmp;
     tmp = *a;
-    *a += *b;
-    *b -= tmp;   
+    *a = *a + *b;
+    *b = abs(tmp - *b);
 }
 
 int main() {
